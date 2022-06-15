@@ -9,8 +9,8 @@ RUN  cd /usr/src/swiss-army-knife-cni && \
 
 FROM centos:centos7
 LABEL org.opencontainers.image.source https://github.com/dougbtv/swiss-army-knife-cni
-COPY --from=build /usr/src/swiss-army-knife-cni/bin /usr/src/swiss-army-knife-cni/bin
-COPY --from=build /usr/src/swiss-army-knife-cni/LICENSE /usr/src/swiss-army-knife-cni/LICENSE
+COPY --from=build /usr/src/swiss-army-knife-cni/bin /usr/src/sak-cni/bin
+COPY --from=build /usr/src/swiss-army-knife-cni/LICENSE /usr/src/sak-cni/LICENSE
 WORKDIR /
 
 ADD ./deployments/entrypoint.sh /
