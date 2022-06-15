@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -eu
-cmd=kubecon-cni
+cmd=swiss-army-knife
 eval $(go env | grep -e "GOHOSTOS" -e "GOHOSTARCH")
 GO=${GO:-go}
 GOOS=${GOOS:-${GOHOSTOS}}

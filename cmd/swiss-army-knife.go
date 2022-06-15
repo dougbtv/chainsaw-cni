@@ -18,7 +18,7 @@ func main() {
 		nil,
 		cmdDel,
 		cniVersion.PluginSupports("0.1.0", "0.2.0", "0.3.0", "0.4.0"),
-		"KubeCon CNI "+version.Version)
+		"SwissArmyKnife CNI "+version.Version)
 }
 
 func cmdAdd(args *skel.CmdArgs) error {
