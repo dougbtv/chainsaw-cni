@@ -1,4 +1,4 @@
-module cni_plugin_demo
+module swiss-army-knife-cni
 
 go 1.17
 

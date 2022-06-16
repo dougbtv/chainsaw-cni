@@ -94,4 +94,9 @@ EOF
 
 generateKubeConfig
 
-sleep 13245120000
+# Watch a socket file.
+# You can test writing to this with: 
+# echo "quux" | sudo socat - UNIX-CONNECT:/var/run/sak-cni/sak.sock
+rm -f /host/var/run/sak-cni/sak.sock
+echo "Listening on socket..."
+nc -lkU /host/var/run/sak-cni/sak.sock

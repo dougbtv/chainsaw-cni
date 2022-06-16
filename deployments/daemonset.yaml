@@ -97,6 +97,8 @@ spec:
           mountPath: /host/etc/cni/net.d
         - name: cnibin
           mountPath: /host/opt/cni/bin
+        - name: socketpath
+          mountPath: /host/var/run/sak-cni
       initContainers:
         - name: install-sak-cni-binary
           image: docker.io/dougbtv/sak-cni:latest
@@ -122,3 +124,7 @@ spec:
         - name: cnibin
           hostPath:
             path: /opt/cni/bin
+        - name: socketpath
+          hostPath:
+            path: /var/run/sak-cni
+            type: DirectoryOrCreate

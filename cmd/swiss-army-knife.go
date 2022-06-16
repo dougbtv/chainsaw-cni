@@ -1,10 +1,11 @@
 package main
 
 import (
-	"cni_plugin_demo/pkg/types"
-	"cni_plugin_demo/pkg/version"
 	"fmt"
 	"os"
+	"swiss-army-knife-cni/pkg/sak"
+	"swiss-army-knife-cni/pkg/types"
+	"swiss-army-knife-cni/pkg/version"
 
 	"github.com/containernetworking/cni/pkg/skel"
 	cniTypes "github.com/containernetworking/cni/pkg/types"
@@ -30,6 +31,10 @@ func cmdAdd(args *skel.CmdArgs) error {
 	}
 
 	fmt.Fprintf(os.Stderr, "!bang value of foo: %s\n", conf.Foo)
+	err = sak.WriteToSocket(conf.Foo, conf)
+	if err != nil {
+		return err
+	}
 
 	result, err := current.NewResultFromResult(conf.PrevResult)
 

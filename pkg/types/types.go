@@ -12,13 +12,19 @@ import (
 // NetConf is our definition for the CNI configuration
 type NetConf struct {
   cniTypes.NetConf
-  PrevResult *current.Result `json:"-"`
-  Foo        string          `json:"foo"`
+  PrevResult       *current.Result `json:"-"`
+  Foo              string          `json:"foo"`
+  FilterExpression string          `json:"filter_expression"`
+  SocketEnabled    bool            `json:"socket_enabled"`
+  SocketPath       string          `json:"socket_path"`
 }
 
 // LoadNetConf parses our cni configuration
 func LoadNetConf(bytes []byte) (*NetConf, error) {
-  conf := NetConf{}
+  conf := NetConf{
+    SocketEnabled: true,
+    SocketPath:    "/var/run/sak-cni/sak.sock",
+  }
   if err := json.Unmarshal(bytes, &conf); err != nil {
     return nil, fmt.Errorf("failed to load netconf: %s", err)
   }

@@ -15,3 +15,7 @@ You add swiss-army-knife (aka SAK) as a member of a CNI chain, then... you annot
 This might start out with some considerations that you want to take seriously as an administrator. There's a non-zero probability that someone can do something nasty to your network if they can annotate pods and you're using this tool.
 
 It's a knife, it's sharp, use it carefully.
+
+## TODO
+
+Filter expressions: Limit to just a subset of `ip` commands.
