@@ -5,19 +5,43 @@ import (
   "fmt"
 
   cniTypes "github.com/containernetworking/cni/pkg/types"
+  current "github.com/containernetworking/cni/pkg/types/040"
+  cniVersion "github.com/containernetworking/cni/pkg/version"
 )
 
 // NetConf is our definition for the CNI configuration
 type NetConf struct {
   cniTypes.NetConf
-  Foo string `json:"foo"`
+  PrevResult *current.Result `json:"-"`
+  Foo        string          `json:"foo"`
 }
 
 // LoadNetConf parses our cni configuration
 func LoadNetConf(bytes []byte) (*NetConf, error) {
-  n := &NetConf{}
-  if err := json.Unmarshal(bytes, n); err != nil {
+  conf := NetConf{}
+  if err := json.Unmarshal(bytes, &conf); err != nil {
     return nil, fmt.Errorf("failed to load netconf: %s", err)
   }
-  return n, nil
+
+  // Parse previous result
+  if conf.RawPrevResult != nil {
+    resultBytes, err := json.Marshal(conf.RawPrevResult)
+    if err != nil {
+      return nil, fmt.Errorf("could not serialize prevResult: %v", err)
+    }
+
+    res, err := cniVersion.NewResult(conf.CNIVersion, resultBytes)
+
+    if err != nil {
+      return nil, fmt.Errorf("could not parse prevResult: %v", err)
+    }
+
+    conf.RawPrevResult = nil
+    conf.PrevResult, err = current.NewResultFromResult(res)
+    if err != nil {
+      return nil, fmt.Errorf("could not convert result to current version: %v", err)
+    }
+  }
+
+  return &conf, nil
 }
