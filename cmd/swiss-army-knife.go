@@ -30,13 +30,26 @@ func cmdAdd(args *skel.CmdArgs) error {
 		return err
 	}
 
-	fmt.Fprintf(os.Stderr, "!bang value of foo: %s\n | netns: %s", conf.Foo, args.Netns)
-	err = sak.WriteToSocket(fmt.Sprintf("!bang value of foo: %s | netns: %s", conf.Foo, args.Netns), conf)
+	err = sak.WriteToSocket(fmt.Sprintf("!bang netns: %s", conf.Foo, args.Netns), conf)
 	if err != nil {
 		return err
 	}
 
-	sak.GetAnnotation(args, conf)
+	anno, err := sak.GetAnnotation(args, conf)
+	if err != nil {
+		return err
+	}
+
+	// We only do the rest if we have an annotation...
+	if anno != "" {
+		// sak.WriteToSocket(fmt.Sprintf("!bang anno: %+v", anno), conf)
+		commands, err := sak.ParseAnnotation(anno)
+		if err != nil {
+			sak.WriteToSocket(fmt.Sprintf("Error parsing command: %v", err), conf)
+			return err
+		}
+		sak.WriteToSocket(fmt.Sprintf("!bang Detected commands: %v", commands), conf)
+	}
 
 	result, err := current.NewResultFromResult(conf.PrevResult)
 

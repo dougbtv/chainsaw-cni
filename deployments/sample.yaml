@@ -27,7 +27,8 @@ metadata:
   name: saktestpod
   annotations:
     k8s.v1.cni.cncf.io/networks: test-sak
-    k8s.v1.cni.cncf.io/swiss-army-knife: "bar"
+    k8s.v1.cni.cncf.io/swiss-army-knife: >
+      ["ip route","  ip addr"]
 spec:
   containers:
   - name: saktestpod

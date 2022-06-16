@@ -2,10 +2,13 @@ package sak
 
 import (
   "context"
+  "encoding/json"
   "fmt"
   cnitypes "github.com/containernetworking/cni/pkg/types"
   "net"
   "os"
+  "regexp"
+  "strings"
   // current "github.com/containernetworking/cni/pkg/types/040"
   // cniVersion "github.com/containernetworking/cni/pkg/version"
   "github.com/containernetworking/cni/pkg/skel"
@@ -57,36 +60,65 @@ func WriteToSocket(output string, conf *types.NetConf) error {
   return nil
 }
 
+// ParseAnnotation parses JSON out of the annotation
+func ParseAnnotation(rawannotation string) ([]string, error) {
+
+  var commands []string
+
+  // Parse it if we have JSON.
+  if strings.Contains(rawannotation, "[") {
+    if err := json.Unmarshal([]byte(rawannotation), &commands); err != nil {
+      return nil, fmt.Errorf("failed to parse JSON annotation: %s", err)
+    }
+  } else {
+    // Just parse it as a command.
+    commands = append(commands, rawannotation)
+  }
+
+  // Cycle through each command and make sure it's legit.
+  //
+  validationrx, _ := regexp.Compile("^[^\\.\\/][\\w\\s\\.\\:_\\-\\d\\/]+$")
+  replaceiprx, _ := regexp.Compile("^\\s*?ip\\s+")
+  // r.MatchString("peach")
+  for idx, v := range commands {
+    if !validationrx.MatchString(v) {
+      return nil, fmt.Errorf("We cannot validate the value: '%s' (it's validated like this: https://regex101.com/r/vPKuZC/1)", v)
+    }
+
+    // You can use the "ip" name optionally, but we don't want to use the user input.
+    if replaceiprx.MatchString(v) {
+      commands[idx] = replaceiprx.ReplaceAllString(v, "")
+    }
+  }
+
+  return commands, nil
+
+}
+
 // GetAnnotation gets a pod annotation
-func GetAnnotation(args *skel.CmdArgs, conf *types.NetConf) error {
+func GetAnnotation(args *skel.CmdArgs, conf *types.NetConf) (string, error) {
   kubeClient, err := GetK8sClient(conf.Kubeconfig, nil)
   if err != nil {
-    return fmt.Errorf("error getting k8s client: %v", err)
+    return "", fmt.Errorf("error getting k8s client: %v", err)
   }
 
   k8sArgs, err := GetK8sArgs(args)
   if err != nil {
-    return fmt.Errorf("error getting k8s args: %v", err)
+    return "", fmt.Errorf("error getting k8s args: %v", err)
   }
 
   err = WriteToSocket(fmt.Sprintf("!bang k8sArgs: %+v", k8sArgs), conf)
   if err != nil {
-    return err
+    return "", err
   }
 
   pod, err := getPod(kubeClient, k8sArgs)
   if err != nil {
-    return err
+    return "", err
   }
 
   sakannovalue := pod.Annotations[sakAnnotation]
-
-  err = WriteToSocket(fmt.Sprintf("!bang sakannovalue: %+v", sakannovalue), conf)
-  if err != nil {
-    return err
-  }
-
-  return nil
+  return sakannovalue, nil
 
 }
 
