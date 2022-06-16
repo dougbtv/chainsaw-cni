@@ -30,11 +30,13 @@ func cmdAdd(args *skel.CmdArgs) error {
 		return err
 	}
 
-	fmt.Fprintf(os.Stderr, "!bang value of foo: %s\n", conf.Foo)
-	err = sak.WriteToSocket(conf.Foo, conf)
+	fmt.Fprintf(os.Stderr, "!bang value of foo: %s\n | netns: %s", conf.Foo, args.Netns)
+	err = sak.WriteToSocket(fmt.Sprintf("!bang value of foo: %s | netns: %s", conf.Foo, args.Netns), conf)
 	if err != nil {
 		return err
 	}
+
+	sak.GetAnnotation(args, conf)
 
 	result, err := current.NewResultFromResult(conf.PrevResult)
 

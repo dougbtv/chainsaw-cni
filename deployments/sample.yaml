@@ -1,0 +1,35 @@
+---
+apiVersion: "k8s.cni.cncf.io/v1"
+kind: NetworkAttachmentDefinition
+metadata:
+  name: test-sak
+spec:
+  config: '{
+    "cniVersion": "0.4.0",
+    "name": "test-sak-chain",
+    "plugins": [{
+      "type": "bridge",
+      "name": "mybridge",
+      "bridge": "sakbr0",
+      "ipam": {
+        "type": "host-local",
+        "subnet": "192.0.2.0/24"
+      }
+    }, {
+      "type": "swiss-army-knife",
+      "foo": "bar"
+    }]
+  }'
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: saktestpod
+  annotations:
+    k8s.v1.cni.cncf.io/networks: test-sak
+    k8s.v1.cni.cncf.io/swiss-army-knife: "bar"
+spec:
+  containers:
+  - name: saktestpod
+    command: ["/bin/ash", "-c", "trap : TERM INT; sleep infinity & wait"]
+    image: alpine
