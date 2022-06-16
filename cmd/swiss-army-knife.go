@@ -4,6 +4,7 @@ import (
 	"cni_plugin_demo/pkg/types"
 	"cni_plugin_demo/pkg/version"
 	"fmt"
+	"os"
 
 	"github.com/containernetworking/cni/pkg/skel"
 	cniTypes "github.com/containernetworking/cni/pkg/types"
@@ -27,6 +28,9 @@ func cmdAdd(args *skel.CmdArgs) error {
 		err = fmt.Errorf("Error parsing CNI configuration \"%s\": %s", args.StdinData, err)
 		return err
 	}
+
+	fmt.Fprintf(os.Stderr, "!bang value of foo: %s\n", n.Foo)
+
 	result := &current.Result{
 		CNIVersion: n.CNIVersion,
 	}
@@ -36,7 +40,7 @@ func cmdAdd(args *skel.CmdArgs) error {
 func cmdDel(args *skel.CmdArgs) (err error) {
 	netNS, err := ns.GetNS(args.Netns)
 	if err != nil {
-		return err
+		fmt.Fprintf(os.Stderr, "Error getting netNS: %s\n", err)
 	}
 	defer netNS.Close()
 	return nil
