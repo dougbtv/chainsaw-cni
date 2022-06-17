@@ -4,7 +4,7 @@
 
 ## Chainsaw: A configuration and debugging tool for rough cuts using CNI chains.
 
-The gist is that it allows you to tweak parameters of your network namespaces at runtime. Enables you to run `ip` commands against your containers network namespace from within a CNI chain -- using 
+The gist is that it allows you to tweak parameters of your network namespaces at runtime. Enables you to run `ip` commands against your containers network namespace from within a CNI chain -- by annotating a pod with the `ip` commands you'd like to run.
 
 You add chainsaw-cni as a member of a CNI chain, then... you annotate a pod -- you use `ip` commands, and it modifies your network namespace using the `ip` command.
 
