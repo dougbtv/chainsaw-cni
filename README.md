@@ -169,4 +169,5 @@ It's a chainsaw after all, [use it carefully](http://www.gameoflogging.com/).
 
 ## TODO
 
-Filter expressions: Limit to just a subset of `ip` commands.
+* Add special keywords to use variables from CNI, e.g. `CURRENT_INTERFACE` to do `dev net1` etc etc.
+* Filter expressions: Limit to just a subset of `ip` commands.
