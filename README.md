@@ -16,6 +16,8 @@ Clone this repository and install the daemonset with:
 kubectl create -f deployments/daemonset.yaml
 ```
 
+*NOTE*: For openshift, see the `deployments/` directory for Openshift specific configuration.
+
 ## Example Usage
 
 This example uses Multus CNI to attach a second interface. (To be expanded later!)
