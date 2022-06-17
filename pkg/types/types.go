@@ -33,8 +33,8 @@ type K8sArgs struct {
 func LoadNetConf(bytes []byte) (*NetConf, error) {
   conf := NetConf{
     SocketEnabled: true,
-    SocketPath:    "/var/run/sak-cni/sak.sock",
-    Kubeconfig:    "/etc/cni/net.d/sak.d/sak.kubeconfig",
+    SocketPath:    "/var/run/chainsaw-cni/chainsaw.sock",
+    Kubeconfig:    "/etc/cni/net.d/chainsaw.d/chainsaw.kubeconfig",
   }
   if err := json.Unmarshal(bytes, &conf); err != nil {
     return nil, fmt.Errorf("failed to load netconf: %s", err)

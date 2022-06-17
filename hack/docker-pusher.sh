@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t dougbtv/sak-cni:latest .
-docker push dougbtv/sak-cni:latest
+docker build -t dougbtv/chainsaw-cni:latest .
+docker push dougbtv/chainsaw-cni:latest

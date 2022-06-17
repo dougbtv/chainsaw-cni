@@ -1,4 +1,4 @@
-module swiss-army-knife-cni
+module chainsaw-cni
 
 go 1.17
 

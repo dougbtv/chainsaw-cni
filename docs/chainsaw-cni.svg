@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="chainsaw-cni.svg"
+   inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/chainsaw-cni.png"
+   inkscape:export-xdpi="175.50999"
+   inkscape:export-ydpi="175.50999"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="236.26918"
+     inkscape:cy="554.83075"
+     inkscape:window-width="2556"
+     inkscape:window-height="1401"
+     inkscape:window-x="1920"
+     inkscape:window-y="18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#544b46;fill-opacity:1;stroke:#000000;stroke-width:0.329929px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 86.15824,145.30847 105.78057,-0.0276 c 10.33476,4.88874 7.1009,10.17863 -0.0636,15.58471 l -98.550099,1.08328 z"
+       id="path20068"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <g
+       id="g20033"
+       transform="matrix(1.2469785,0,0,1.2469785,-52.307358,-44.030944)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path20023" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle20025"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle20027"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle20029"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle20031"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15564"
+       transform="matrix(1.2469785,0,0,1.2469785,-40.582767,-44.065974)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path9955" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="path15435"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15553"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15555"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15557"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15576"
+       transform="matrix(1.2469785,0,0,1.2469785,-28.858177,-44.101014)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15566" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15568"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15570"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15572"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15574"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15588"
+       transform="matrix(1.2469785,0,0,1.2469785,-17.133587,-44.136054)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15578" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15580"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15582"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15584"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15586"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15600"
+       transform="matrix(1.2469785,0,0,1.2469785,-5.4089954,-44.171104)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15590" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15592"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15594"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15596"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15598"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15612"
+       transform="matrix(1.2469785,0,0,1.2469785,6.315595,-44.206144)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15602" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15604"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15606"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15608"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15610"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15624"
+       transform="matrix(1.2469785,0,0,1.2469785,18.040184,-44.241174)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15614" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15616"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15618"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15620"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15622"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15636"
+       transform="matrix(1.2469785,0,0,1.2469785,29.764774,-44.276214)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15626" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15628"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15630"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15632"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15634"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15752"
+       transform="matrix(1.2469785,0,0,-1.2469785,-45.201784,350.85904)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15742" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15744"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15746"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15748"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15750"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15764"
+       transform="matrix(1.2469785,0,0,-1.2469785,-33.477194,350.89409)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15754" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15756"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15758"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15760"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15762"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15776"
+       transform="matrix(1.2469785,0,0,-1.2469785,-21.752606,350.92913)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15766" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15768"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15770"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15772"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15774"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15788"
+       transform="matrix(1.2469785,0,0,-1.2469785,-10.028014,350.96416)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15778" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15780"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15782"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15784"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15786"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15800"
+       transform="matrix(1.2469785,0,0,-1.2469785,1.696576,350.9992)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15790" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15792"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15794"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15796"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15798"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15812"
+       transform="matrix(1.2469785,0,0,-1.2469785,13.421165,351.03425)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15802" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15804"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15806"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15808"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15810"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15824"
+       transform="matrix(1.2469785,0,0,-1.2469785,25.145755,351.06929)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15814" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15816"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15818"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15820"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15822"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15836"
+       transform="matrix(1.242837,-0.10154576,-0.10154576,-1.242837,52.77326,362.00281)"
+       inkscape:transform-center-x="-5.260269"
+       inkscape:transform-center-y="0.43399102"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15826" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15828"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15830"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15832"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15834"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <g
+       id="g15928"
+       transform="matrix(1.2450432,0.06944499,-0.06944499,1.2450432,52.278907,-51.879314)"
+       inkscape:transform-center-x="-5.642396"
+       inkscape:transform-center-y="-0.94227813"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999">
+      <path
+         style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.90972,151.345 0.58258,-0.71104 3.3697,-0.0711 0.42259,0.55049 0.82484,-0.11533 -0.31086,-1.27 1.55555,-0.25748 0.25476,1.10497 1.62948,-0.15476 0.15485,-0.92267 1.07861,0.54094 -0.13416,2.5523 -9.4024,0.0281 z"
+         id="path15918" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15920"
+         cx="121.3872"
+         cy="151.75529"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15922"
+         cx="119.15592"
+         cy="151.72238"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15924"
+         cx="116.3531"
+         cy="151.81219"
+         r="0.39197865" />
+      <circle
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0649999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+         id="circle15926"
+         cx="114.1763"
+         cy="151.83525"
+         r="0.39197865" />
+    </g>
+    <path
+       style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.329929px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 194.13842,145.19093 0.82442,-0.41612 0.92233,0.23264 0.10101,1.18174 0.73804,0.64948 0.85632,0.1136 0.25133,0.95528 -0.21732,0.72133 0.33743,0.37299 1.40178,-0.0362 0.0291,1.21972 -0.98299,0.1705 0.11884,2.06972 0.56208,0.30578 -0.4035,1.10874 -1.05384,-0.0192 -0.38566,0.9209 0.48808,0.72399 -2.02249,2.28576 -0.004,0.66877 -0.72389,0.57558 -0.96761,-0.0844 -0.23634,0.32035 0.2037,1.48378 -1.78478,0.95383 -0.31551,-0.8039 -1.86451,0.2442 -0.0528,0.70823 -0.98424,0.28461 -0.11984,-2.02025 c 4.2006,-1.05235 6.95939,-3.25985 7.75163,-7.04295 0.58347,-2.28237 -0.0343,-4.50338 -2.6077,-6.44033 z"
+       id="path15963"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.0810536;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 182.34625,144.39276 0.7747,-0.84482 4.20037,0.14549 0.48791,0.71473 1.03498,-0.0863 -0.29885,-1.60279 1.95462,-0.21256 0.24044,1.39344 2.03952,-0.0795 0.25687,-1.13803 1.30535,0.7484 -0.34428,3.16842 -11.70835,-0.61797 z"
+       id="path16264"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0810535;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16266"
+       cx="200.67581"
+       cy="134.52533"
+       r="0.4887889"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0810535;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16268"
+       cx="197.89346"
+       cy="134.4843"
+       r="0.4887889"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0810535;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16270"
+       cx="194.39842"
+       cy="134.5963"
+       r="0.4887889"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0810535;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16272"
+       cx="191.68399"
+       cy="134.62505"
+       r="0.4887889"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0694942;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16624"
+       cx="202.81381"
+       cy="135.45007"
+       r="0.41908175"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0694942;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16626"
+       cx="204.70146"
+       cy="137.19583"
+       r="0.41908175"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0694942;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16628"
+       cx="205.73624"
+       cy="139.31622"
+       r="0.41908175"
+       transform="rotate(3.1924885)"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <ellipse
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0553621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle16630"
+       cx="205.88829"
+       cy="142.01601"
+       transform="matrix(0.99849766,0.05479436,-0.05660142,0.99839685,0,0)"
+       rx="0.33656898"
+       ry="0.33116946"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <ellipse
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0553621;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="ellipse16632"
+       cx="205.00786"
+       cy="144.67796"
+       transform="matrix(0.99849766,0.05479436,-0.05660142,0.99839685,0,0)"
+       rx="0.33656898"
+       ry="0.33116946"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <ellipse
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0707631;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="ellipse16634"
+       cx="203.37177"
+       cy="147.17174"
+       transform="matrix(0.99849884,0.05477295,-0.05662354,0.9983956,0,0)"
+       rx="0.43028104"
+       ry="0.42321324"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <ellipse
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0707631;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="ellipse16636"
+       cx="201.41577"
+       cy="148.96056"
+       transform="matrix(0.99849884,0.05477295,-0.05662354,0.9983956,0,0)"
+       rx="0.43028104"
+       ry="0.42321324"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <ellipse
+       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.0707631;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="ellipse16638"
+       cx="199.54189"
+       cy="149.77487"
+       transform="matrix(0.99849884,0.05477295,-0.05662354,0.9983956,0,0)"
+       rx="0.43028104"
+       ry="0.42321324"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#fbfefa;fill-opacity:1;stroke:#000000;stroke-width:0.329929px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 174.01773,154.4014 c -0.41938,-0.90667 -0.10899,-1.64969 0.50553,-2.32455 0.7741,-0.59139 1.48139,-0.11921 2.19245,0.29278 -0.007,2.05922 -0.95721,2.65902 -2.69798,2.03177 z"
+       id="path20160"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.87745px;line-height:5.54842px;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke:none;stroke-width:0.221937px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="103.37798"
+       y="156.00938"
+       id="text97710"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999"><tspan
+         sodipodi:role="line"
+         id="tspan97708"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;stroke:none;stroke-width:0.221937px"
+         x="103.37798"
+         y="156.00938">chainsaw cni</tspan></text>
+    <path
+       style="fill:#140d0a;fill-opacity:1;stroke:#000000;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 55.077748,166.09857 3.419644,-1.18229 36.018541,-1.83868 2.567958,-2.91483 0.02687,3.54973 c -0.909752,1.3481 -2.869751,2.09714 -5.335989,2.55742 l -17.2589,0.21135 -11.010979,0.71299 -6.627507,0.0102 -1.884767,-0.15502 z"
+       id="path4569"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#891a00;fill-opacity:1;stroke:#000000;stroke-width:0.60176;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 44.805119,145.84553 -3.700166,-3.44392 0.267934,-5.68218 2.628056,-0.46021 1.436494,-1.72488 1.338589,0.15047 1.650548,-8.75781 c 2.145333,-7.97082 25.585916,-0.60168 39.101608,-0.38189 2.067392,0.0301 2.865135,0.8306 4.119384,1.35412 l 0.659972,2.97485 c 1.720653,3.32968 1.542251,6.4531 1.877291,9.6323 l -5.32076,2.19855 -36.036962,8.36713 -6.014536,-2.80369 -0.882569,-0.22776 z"
+       id="path8016"
+       sodipodi:nodetypes="cccccccccccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#ffd5d5;fill-opacity:1;stroke:none;stroke-width:0.239422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 48.331873,134.97552 0.762871,-5.95658 c 0.402724,-0.82267 0.360798,-1.7717 2.618799,-2.06717 l 19.108923,1.52001 c -8.109439,1.22706 -20.841972,-4.64645 -22.490593,6.50374 z"
+       id="path8217"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       id="path511"
+       style="fill:#1b1714;fill-opacity:1;stroke:none;stroke-width:0.427514;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 360.33398 401.3457 L 349.62305 411.25195 C 344.5576 415.69683 347.31588 423.23197 349.7793 430.65039 C 356.60014 465.33164 339.41983 488.54491 310.53516 506.16602 C 302.0819 500.34161 285.14581 499.95539 272.34766 497.39453 C 283.51594 481.1251 292.48156 464.66161 312.06055 449.13281 C 315.37921 447.61412 313.64143 464.76656 314.12305 473.73633 L 329.3418 474.82617 C 332.22749 436.53733 324.29745 417.75537 309.35352 423.83398 L 299.69922 432.48242 C 275.54132 445.20439 262.27443 465.81568 252.36328 481.25781 L 230.35156 513.79492 L 220.5293 514.30273 L 194.70117 556.05469 L 176.92969 556.60547 L 174.0918 563.04102 L 173.42773 580.7168 C 166.64864 586.60424 159.48148 588.0034 152.25391 588.71875 L 81.5625 589.81836 C 71.459808 590.14635 73.294872 585.91882 71.638672 583.02344 L 71.201172 575.83789 C 70.156325 570.14604 73.570731 566.10133 81.867188 563.85742 L 126.73633 551.14062 L 130.98633 551.88672 L 135.19922 549.75977 C 142.51668 561.39149 146.77088 561.38606 151.79492 564.30469 L 153.8457 562.85938 C 152.30595 557.4918 155.66499 553.97051 159.46094 550.61523 L 165.49609 551.80273 C 170.91993 556.40918 173.45717 555.63538 176.92969 556.60547 L 173.59375 555.74414 L 173.88086 549.66992 L 164.44336 541.68164 C 164.17573 532.14113 158.73684 518.84524 166.30273 514.99609 C 165.68378 511.87099 167.13064 506.07021 162.97656 507.52344 L 156.36914 516.73438 L 143.58789 518.9668 C 128.8705 520.82587 98.599625 517.82714 100.48047 525.59766 L 101.40039 532.96484 C 74.731171 541.71135 57.084082 551.93642 54.599609 569.64453 C 54.249247 578.38235 53.446214 587.20563 55.082031 595.56836 C 58.366165 598.27446 63.763237 600.83478 61.833984 603.90039 C 51.189115 619.44623 100.05115 614.83813 108.35156 617.75781 L 174.66406 622.63281 L 176.99609 623.94922 L 208.55273 625.17773 L 251.26953 545.84375 L 297.73438 531.93359 L 305.59766 524.65234 C 322.18523 514.73158 331.24405 506.49998 345.24805 494.57031 L 348.44336 493.12305 C 358.15775 475.04394 379.25705 447.19759 376.49023 422.00391 C 375.73055 415.08654 370.97843 408.40915 368.11133 402.26953 L 360.33398 401.3457 z "
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#9d9389;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 55.077748,166.57742 -0.0966,-5.89457 c -0.16174,-1.86113 1.18635,-4.06773 2.782857,-6.33117 l 4.937891,-7.07057 c 1.939477,-3.50398 4.981806,-4.26002 9.666684,-5.24654 l 5.5025,-1.77736 5.588906,-1.34066 10.724843,0.58983 3.084087,2.53855 0.56141,1.19784 -1.0447,19.16528 c -0.353057,0.73811 -0.777383,1.42561 -1.514761,1.89081 -0.778279,0.32669 -1.424605,0.48268 -2.024401,0.5785 l -5.289217,0.808 -31.231882,0.25407 z"
+       id="path4534"
+       sodipodi:nodetypes="cccccccccccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#5e4e37;fill-opacity:1;stroke:none;stroke-width:0.149309;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 93.971761,140.00239 -5.465088,-0.14042 c 4.504752,0.76521 6.206139,1.71345 5.348274,2.82878 l 2.454411,-0.51795 z"
+       id="path6230"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#5e4e37;fill-opacity:1;stroke:none;stroke-width:0.239422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 80.640562,144.86585 16.613342,-2.11935 0.114967,4.03198 c -0.716854,-4.15857 -2.721981,-3.48367 -16.728309,-1.91263 z"
+       id="path6322"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#5e4e37;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 57.064047,164.27708 c 0.227205,-1.99896 -0.523782,-3.56394 1.790561,-6.48883 l 5.45928,-7.7109 c -2.574432,4.70114 -7.175154,8.99006 -7.249841,14.19973 z"
+       id="path6718"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#5e4e37;fill-opacity:1;stroke:none;stroke-width:0.239422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 73.308578,145.85167 1.279977,-0.15405 c -1.838555,1.07543 -0.324109,12.07295 -0.486163,18.10943 z"
+       id="path7042"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#5e4e37;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 64.758153,149.02057 c 0.591616,-1.69656 2.48381,-2.36553 4.452733,-2.97389 -2.192309,0.82004 -3.855073,1.91532 -4.582639,3.49666 z"
+       id="path7172"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#140d0a;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 83.814393,153.81849 9.785046,-0.21288 c 1.636027,0.26508 2.596164,1.00778 2.325707,2.62008 l -0.03149,1.74154 c -0.125953,1.35472 -0.834573,1.9551 -1.87074,2.1314 l -10.323259,0.1619 c -2.057995,-0.12056 -2.185759,-1.07918 -2.307874,-2.04026 l -0.0103,-2.0593 c 0.08692,-1.48326 1.149274,-2.0202 2.432909,-2.34248 z"
+       id="path7302"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#8f8a84;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 82.468872,156.21166 2.105611,-1.4555 2.23827,0.69154 0.473194,2.41862 -2.090575,1.53497 -2.337948,-0.75528 z"
+       id="path7594"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#8f8a84;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 89.702081,157.04184 1.560358,-2.04932 2.229281,-0.0902 1.448476,1.91111 -1.144076,2.11091 -2.52408,0.15776 z"
+       id="path7629"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#140d0a;fill-opacity:1;stroke:none;stroke-width:0.0588185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="path7686"
+       cx="84.860886"
+       cy="157.18323"
+       r="0.76100326"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <circle
+       style="fill:#140d0a;fill-opacity:1;stroke:none;stroke-width:0.0588185;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88843"
+       id="circle7768"
+       cx="92.461777"
+       cy="157.14912"
+       r="0.76100326"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#ffd5d5;fill-opacity:1;stroke:none;stroke-width:0.239422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 46.291115,137.95111 -2.315532,-0.18287 c 2.604924,0.0104 1.654251,3.83053 2.02088,6.23919 z"
+       id="path8575"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#989283;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 71.00284,121.23203 -8.432001,13.30722 -9.238332,13.72154 -3.837089,4.56879 z"
+       id="path8667"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#989283;fill-opacity:1;stroke:none;stroke-width:0.0588186;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 97.04783,106.74118 -1.678656,-0.2062 -2.791921,2.43458 1.777824,0.1112 c 1.038113,3.98718 4.27911,10.60819 0.148377,16.8143 0.874977,-1.06023 3.749823,-4.216 0.968064,-15.01692 l 2.386652,-2.62204 z"
+       id="path8868"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:none;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 72.213958,121.37371 4.073334,-4.43368 2.673312,-1.68075 -3.890914,4.93704 z"
+       id="path9172"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#989283;fill-opacity:1;stroke:none;stroke-width:0.239422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.855305,137.17776 -0.117798,2.61341 c -1.358029,-2.8807 -12.873498,2.29234 -20.783227,4.60642 6.672609,-2.60834 12.082821,-6.08167 20.901025,-7.21983 z"
+       id="path9265"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+    <path
+       style="fill:#989283;fill-opacity:1;stroke:none;stroke-width:0.239422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 45.679957,154.55847 -2.774542,2.13617 c 2.075685,-0.50781 1.322866,0.86125 0.575348,2.2268 -2.961476,4.31337 -15.492471,1.88078 -24.020748,2.26988 l -1.831284,0.13032 c 10.056839,0.40057 25.650021,2.50188 25.459007,-0.24565 1.347646,-1.22632 2.644597,-2.55184 2.592219,-6.51752 z"
+       id="path9528"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/doug/codebase/src/github.com/dougbtv/swiss-army-knife-cni/docs/path20068.png"
+       inkscape:export-xdpi="175.50999"
+       inkscape:export-ydpi="175.50999" />
+  </g>
+</svg>

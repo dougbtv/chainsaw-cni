@@ -1,13 +1,13 @@
 package main
 
 import (
+	"chainsaw-cni/pkg/chainsaw"
+	"chainsaw-cni/pkg/types"
+	"chainsaw-cni/pkg/version"
 	"fmt"
 	"os"
 	"regexp"
 	"strings"
-	"swiss-army-knife-cni/pkg/sak"
-	"swiss-army-knife-cni/pkg/types"
-	"swiss-army-knife-cni/pkg/version"
 
 	"github.com/containernetworking/cni/pkg/skel"
 	cniTypes "github.com/containernetworking/cni/pkg/types"
@@ -22,7 +22,7 @@ func main() {
 		nil,
 		cmdDel,
 		cniVersion.PluginSupports("0.1.0", "0.2.0", "0.3.0", "0.4.0"),
-		"SwissArmyKnife CNI "+version.Version)
+		"Chainsaw CNI "+version.Version)
 }
 
 func cmdAdd(args *skel.CmdArgs) error {
@@ -35,7 +35,7 @@ func cmdAdd(args *skel.CmdArgs) error {
 
 	cniresult, err := current.NewResultFromResult(conf.PrevResult)
 
-	anno, err := sak.GetAnnotation(args, conf)
+	anno, err := chainsaw.GetAnnotation(args, conf)
 	if err != nil {
 		return err
 	}
@@ -49,12 +49,12 @@ func cmdAdd(args *skel.CmdArgs) error {
 		isCrio := strings.Contains(args.Netns, "/var/run/netns/")
 		usenetns := args.Netns
 		if !isCrio {
-			usenetns, err = sak.BindDockerNetns(args.Netns, args.ContainerID)
+			usenetns, err = chainsaw.BindDockerNetns(args.Netns, args.ContainerID)
 			if err != nil {
 				return err
 			}
-			defer sak.UnbindDockerNetns(usenetns)
-			sak.WriteToSocket(fmt.Sprintf("!bang Mounted docker netns @ %s", usenetns), conf)
+			defer chainsaw.UnbindDockerNetns(usenetns)
+			chainsaw.WriteToSocket(fmt.Sprintf("!bang Mounted docker netns @ %s", usenetns), conf)
 		}
 		usenetns = strings.ReplaceAll(usenetns, "/var/run/netns/", "")
 
@@ -68,7 +68,7 @@ func cmdAdd(args *skel.CmdArgs) error {
 
 		// Figure out the current interface name.
 		// We get the last one in the list that has a sandbox
-		// sak.WriteToSocket(fmt.Sprintf("!bang cniresult: %+v", cniresult.Interfaces), conf)
+		// chainsaw.WriteToSocket(fmt.Sprintf("!bang cniresult: %+v", cniresult.Interfaces), conf)
 		currentInterface := ""
 		for _, v := range cniresult.Interfaces {
 			if v.Sandbox != "" {
@@ -76,15 +76,15 @@ func cmdAdd(args *skel.CmdArgs) error {
 			}
 		}
 
-		sak.WriteToSocket(fmt.Sprintf("!bang =========== isCrio: %v / pid: %s / ifname: %s / netns: %s", isCrio, pid, currentInterface, args.Netns), conf)
-		// sak.WriteToSocket(fmt.Sprintf("!bang anno: %+v", anno), conf)
-		commands, err := sak.ParseAnnotation(anno)
+		chainsaw.WriteToSocket(fmt.Sprintf("!bang =========== isCrio: %v / pid: %s / ifname: %s / netns: %s", isCrio, pid, currentInterface, args.Netns), conf)
+		// chainsaw.WriteToSocket(fmt.Sprintf("!bang anno: %+v", anno), conf)
+		commands, err := chainsaw.ParseAnnotation(anno)
 		if err != nil {
-			sak.WriteToSocket(fmt.Sprintf("Error parsing command: %v", err), conf)
+			chainsaw.WriteToSocket(fmt.Sprintf("Error parsing command: %v", err), conf)
 			return err
 		}
-		sak.WriteToSocket(fmt.Sprintf("Detected commands: %v", commands), conf)
-		err = sak.ProcessCommands(usenetns, commands, conf)
+		chainsaw.WriteToSocket(fmt.Sprintf("Detected commands: %v", commands), conf)
+		err = chainsaw.ProcessCommands(usenetns, commands, conf)
 		if err != nil {
 			return err
 		}

@@ -2,7 +2,7 @@
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: sak-cni
+  name: chainsaw-cni
 rules:
   - apiGroups: ["k8s.cni.cncf.io"]
     resources:
@@ -30,43 +30,43 @@ rules:
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: sak-cni
+  name: chainsaw-cni
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: sak-cni
+  name: chainsaw-cni
 subjects:
 - kind: ServiceAccount
-  name: sak-cni
+  name: chainsaw-cni
   namespace: kube-system
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: sak-cni
+  name: chainsaw-cni
   namespace: kube-system
 ---
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: kube-sak-cni-ds
+  name: kube-chainsaw-cni-ds
   namespace: kube-system
   labels:
     tier: node
-    app: sak-cni
-    name: sak-cni
+    app: chainsaw-cni
+    name: chainsaw-cni
 spec:
   selector:
     matchLabels:
-      name: sak-cni
+      name: chainsaw-cni
   updateStrategy:
     type: RollingUpdate
   template:
     metadata:
       labels:
         tier: node
-        app: sak-cni
-        name: sak-cni
+        app: chainsaw-cni
+        name: chainsaw-cni
     spec:
       hostNetwork: true
       tolerations:
@@ -74,15 +74,12 @@ spec:
         effect: NoSchedule
       - operator: Exists
         effect: NoExecute
-      serviceAccountName: sak-cni
+      serviceAccountName: chainsaw-cni
       containers:
-      - name: kube-sak-cni
-        image: docker.io/dougbtv/sak-cni:latest
+      - name: kube-chainsaw-cni
+        image: docker.io/dougbtv/chainsaw-cni:latest
         imagePullPolicy: Always
         command: ["/entrypoint.sh"]
-        args:
-        - "--sak-cni-conf-file=auto"
-        - "--cni-version=0.3.1"
         resources:
           requests:
             cpu: "100m"
@@ -98,14 +95,14 @@ spec:
         - name: cnibin
           mountPath: /host/opt/cni/bin
         - name: socketpath
-          mountPath: /host/var/run/sak-cni
+          mountPath: /host/var/run/chainsaw-cni
       initContainers:
-        - name: install-sak-cni-binary
-          image: docker.io/dougbtv/sak-cni:latest
+        - name: install-chainsaw-cni-binary
+          image: docker.io/dougbtv/chainsaw-cni:latest
           command:
             - "cp"
-            - "/usr/src/sak-cni/bin/swiss-army-knife"
-            - "/host/opt/cni/bin/swiss-army-knife"
+            - "/usr/src/chainsaw-cni/bin/chainsaw-cni"
+            - "/host/opt/cni/bin/chainsaw-cni"
           resources:
             requests:
               cpu: "10m"
@@ -126,5 +123,5 @@ spec:
             path: /var/lib/cni/bin
         - name: socketpath
           hostPath:
-            path: /var/run/sak-cni
+            path: /var/run/chainsaw-cni
             type: DirectoryOrCreate

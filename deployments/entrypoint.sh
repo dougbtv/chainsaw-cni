@@ -10,10 +10,10 @@ function exitonsigterm() {
 }
 trap exitonsigterm SIGTERM
 
-# Make a sak.d directory (for our kubeconfig)
-mkdir -p /host/etc/cni/net.d/sak.d
-SAK_KUBECONFIG=/host/etc/cni/net.d/sak.d/sak.kubeconfig
-SAK_TEMP_KUBECONFIG=/host/etc/cni/net.d/sak.d/tmp.sak.kubeconfig
+# Make a chainsaw.d directory (for our kubeconfig)
+mkdir -p /host/etc/cni/net.d/chainsaw.d
+CHAINSAW_KUBECONFIG=/host/etc/cni/net.d/chainsaw.d/chainsaw.kubeconfig
+CHAINSAW_TEMP_KUBECONFIG=/host/etc/cni/net.d/chainsaw.d/tmp.chainsaw.kubeconfig
 
 # ------------------------------- Generate a "kube-config"
 # Inspired by: https://tinyurl.com/y7r2knme
@@ -51,11 +51,11 @@ function generateKubeConfig {
     # to skip TLS verification for now.  We should eventually support
     # writing more complete kubeconfig files. This is only used
     # if the provided CNI network config references it.
-    touch $SAK_TEMP_KUBECONFIG
-    chmod ${KUBECONFIG_MODE:-600} $SAK_TEMP_KUBECONFIG
+    touch $CHAINSAW_TEMP_KUBECONFIG
+    chmod ${KUBECONFIG_MODE:-600} $CHAINSAW_TEMP_KUBECONFIG
     # Write the kubeconfig to a temp file first.
     timenow=$(date)
-    cat > $SAK_TEMP_KUBECONFIG <<EOF
+    cat > $CHAINSAW_TEMP_KUBECONFIG <<EOF
 # Kubeconfig file for Multus CNI plugin.
 # Generated at ${timenow}
 apiVersion: v1
@@ -66,19 +66,19 @@ clusters:
     server: ${KUBERNETES_SERVICE_PROTOCOL:-https}://[${KUBERNETES_SERVICE_HOST}]:${KUBERNETES_SERVICE_PORT}
     $TLS_CFG
 users:
-- name: sak-cni
+- name: chainsaw-cni
   user:
     token: "${SERVICEACCOUNT_TOKEN}"
 contexts:
-- name: sak-cni-context
+- name: chainsaw-cni-context
   context:
     cluster: local
-    user: sak-cni
-current-context: sak-cni-context
+    user: chainsaw-cni
+current-context: chainsaw-cni-context
 EOF
 
     # Atomically move the temp kubeconfig to its permanent home.
-    mv -f $SAK_TEMP_KUBECONFIG $SAK_KUBECONFIG
+    mv -f $CHAINSAW_TEMP_KUBECONFIG $CHAINSAW_KUBECONFIG
 
     # Keep track of the md5sum
     LAST_SERVICEACCOUNT_MD5SUM=$(md5sum $SERVICE_ACCOUNT_TOKEN_PATH | awk '{print $1}')
@@ -96,7 +96,7 @@ generateKubeConfig
 
 # Watch a socket file.
 # You can test writing to this with: 
-# echo "quux" | sudo socat - UNIX-CONNECT:/var/run/sak-cni/sak.sock
-rm -f /host/var/run/sak-cni/sak.sock
+# echo "quux" | sudo socat - UNIX-CONNECT:/var/run/chainsaw-cni/chainsaw.sock
+rm -f /host/var/run/chainsaw-cni/chainsaw.sock
 echo "Listening on socket..."
-nc -lkU /host/var/run/sak-cni/sak.sock
+nc -lkU /host/var/run/chainsaw-cni/chainsaw.sock

@@ -2,15 +2,15 @@
 FROM golang:1.17.1 as build
 
 # Add everything
-ADD . /usr/src/swiss-army-knife-cni
+ADD . /usr/src/chainsaw-cni
 
-RUN  cd /usr/src/swiss-army-knife-cni && \
+RUN  cd /usr/src/chainsaw-cni && \
      ./hack/build-go.sh
 
-FROM dougbtv/sak-baseimage:latest
-LABEL org.opencontainers.image.source https://github.com/dougbtv/swiss-army-knife-cni
-COPY --from=build /usr/src/swiss-army-knife-cni/bin /usr/src/sak-cni/bin
-COPY --from=build /usr/src/swiss-army-knife-cni/LICENSE /usr/src/sak-cni/LICENSE
+FROM dougbtv/chainsaw-baseimage:latest
+LABEL org.opencontainers.image.source https://github.com/dougbtv/chainsaw-cni
+COPY --from=build /usr/src/chainsaw-cni/bin /usr/src/chainsaw-cni/bin
+COPY --from=build /usr/src/chainsaw-cni/LICENSE /usr/src/chainsaw-cni/LICENSE
 WORKDIR /
 
 ADD ./deployments/entrypoint.sh /
