@@ -6,8 +6,6 @@ import (
 	"chainsaw-cni/pkg/version"
 	"fmt"
 	"os"
-	"regexp"
-	"strings"
 
 	"github.com/containernetworking/cni/pkg/skel"
 	cniTypes "github.com/containernetworking/cni/pkg/types"
@@ -43,29 +41,6 @@ func cmdAdd(args *skel.CmdArgs) error {
 	// We only do the rest if we have an annotation...
 	if anno != "" {
 
-		// Actually we wanna differentiate between docker & crio
-		// crio: /var/run/netns/c00fc6c1-9a7e-4fb5-b415-be618736dec7
-		// docker: /proc/27690/ns/net
-		isCrio := strings.Contains(args.Netns, "/var/run/netns/")
-		usenetns := args.Netns
-		if !isCrio {
-			usenetns, err = chainsaw.BindDockerNetns(args.Netns, args.ContainerID)
-			if err != nil {
-				return err
-			}
-			defer chainsaw.UnbindDockerNetns(usenetns)
-			chainsaw.WriteToSocket(fmt.Sprintf("!bang Mounted docker netns @ %s", usenetns), conf)
-		}
-		usenetns = strings.ReplaceAll(usenetns, "/var/run/netns/", "")
-
-		// This worked with docker!
-		// sudo ip netns 896d161cd20d60f239df27dbaa3f5d5f108ae7940390edc346d7445aa667ebcf ip addr
-
-		// Convert the netns into a PID
-		// I'm just stripping out non digits here.
-		replaceiprx, _ := regexp.Compile(`\D`)
-		pid := replaceiprx.ReplaceAllString(args.Netns, "")
-
 		// Figure out the current interface name.
 		// We get the last one in the list that has a sandbox
 		// chainsaw.WriteToSocket(fmt.Sprintf("!bang cniresult: %+v", cniresult.Interfaces), conf)
@@ -76,7 +51,7 @@ func cmdAdd(args *skel.CmdArgs) error {
 			}
 		}
 
-		chainsaw.WriteToSocket(fmt.Sprintf("!bang =========== isCrio: %v / pid: %s / ifname: %s / netns: %s", isCrio, pid, currentInterface, args.Netns), conf)
+		chainsaw.WriteToSocket(fmt.Sprintf("!bang =========== ifname: %s / netns: %s", currentInterface, args.Netns), conf)
 		// chainsaw.WriteToSocket(fmt.Sprintf("!bang anno: %+v", anno), conf)
 		commands, err := chainsaw.ParseAnnotation(anno)
 		if err != nil {
@@ -84,7 +59,7 @@ func cmdAdd(args *skel.CmdArgs) error {
 			return err
 		}
 		chainsaw.WriteToSocket(fmt.Sprintf("Detected commands: %v", commands), conf)
-		err = chainsaw.ProcessCommands(usenetns, commands, conf)
+		err = chainsaw.ProcessCommands(args.Netns, commands, conf)
 		if err != nil {
 			return err
 		}
