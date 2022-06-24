@@ -14,6 +14,7 @@ import (
 	// cniVersion "github.com/containernetworking/cni/pkg/version"
 	"chainsaw-cni/pkg/types"
 	"github.com/containernetworking/cni/pkg/skel"
+	"github.com/containernetworking/plugins/pkg/ns"
 	"time"
 
 	"k8s.io/client-go/kubernetes"
@@ -41,59 +42,30 @@ func runCommand(command string, argsstring string) (string, error) {
 	return string(out), nil
 }
 
-// BindDockerNetns bind mounts the docker netns so `ip netns` can use it
-func BindDockerNetns(originalNetnsPath string, containerid string) (string, error) {
-	newNetnsPath := "/var/run/netns/" + containerid
-	_, err := os.Stat(newNetnsPath)
-	if os.IsNotExist(err) {
-		file, err := os.Create(newNetnsPath)
-		if err != nil {
-			return "", fmt.Errorf("Failed to create file: %s", newNetnsPath)
-		}
-		file.Close()
-	} else {
-		return "", fmt.Errorf("The target netns file exists: %s", newNetnsPath)
-	}
-
-	// Now let's bind mount the original to this.
-	// mount -o bind /proc/3357/ns/net /var/run/netns/$container_id
-	_, err = runCommand("mount", fmt.Sprintf("-o bind %s %s", originalNetnsPath, newNetnsPath))
-	if err != nil {
-		return "", fmt.Errorf("Failed to mount %s to %s: %s", originalNetnsPath, newNetnsPath, err)
-	}
-	// fmt.Printf("output: %q\n", out.String())
-
-	return newNetnsPath, nil
-}
-
-// UnbindDockerNetns unmounts our bind for a docker ns.
-func UnbindDockerNetns(dockernetns string) error {
-	_, err := runCommand("umount", dockernetns)
-	if err != nil {
-		return fmt.Errorf("Failed to umount %s: %s", dockernetns, err)
-	}
-
-	err = os.Remove(dockernetns)
-	if err != nil {
-		return fmt.Errorf("Failed to remove %s: %s", dockernetns, err)
-	}
-	return nil
-}
-
 // ProcessCommands runs all of the intended commands from the pod annotation
-func ProcessCommands(netns string, commands []string, conf *types.NetConf) error {
-	for _, v := range commands {
-		// sudo ip netns 896d161cd20d60f239df27dbaa3f5d5f108ae7940390edc346d7445aa667ebcf ip addr
-		argstring := fmt.Sprintf("netns exec %s ip %s", netns, v)
-		debugcmdstring := "ip " + argstring
-		output, err := runCommand("ip", argstring)
-		WriteToSocket(fmt.Sprintf("Running %s ===============\n%s\n", debugcmdstring, output), conf)
-		if err != nil {
-			WriteToSocket(fmt.Sprintf("Command '%s' failed with: %s", debugcmdstring, err), conf)
-			return fmt.Errorf("Command '%s' failed with: %s", debugcmdstring, err)
-		}
+func ProcessCommands(netnsName string, commands []string, conf *types.NetConf) error {
+	netns, err := ns.GetNS(netnsName)
+	if err != nil {
+		return err
 	}
-	return nil
+	defer netns.Close()
+
+	err = netns.Do(func(_ ns.NetNS) error {
+		for _, v := range commands {
+			cmd := "ip"
+			cmdArgs := strings.TrimSpace(v)
+
+			output, err := runCommand(cmd, cmdArgs)
+			WriteToSocket(fmt.Sprintf("Running %s ===============\n%s\n", v, output), conf)
+			if err != nil {
+				WriteToSocket(fmt.Sprintf("Command '%s' failed with: %s", v, err), conf)
+				return fmt.Errorf("Command '%s' failed with: %s", v, err)
+			}
+		}
+		return nil
+	})
+
+	return err
 }
 
 // WriteToSocket writes to our socketfile, for logging.
