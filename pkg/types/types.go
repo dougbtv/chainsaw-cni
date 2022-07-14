@@ -2,11 +2,13 @@ package types
 
 import (
   "encoding/json"
+  "errors"
   "fmt"
   cnitypes "github.com/containernetworking/cni/pkg/types"
   current "github.com/containernetworking/cni/pkg/types/040"
   cniVersion "github.com/containernetworking/cni/pkg/version"
   "net"
+  "os"
 )
 
 // NetConf is our definition for the CNI configuration
@@ -31,10 +33,18 @@ type K8sArgs struct {
 
 // LoadNetConf parses our cni configuration
 func LoadNetConf(bytes []byte) (*NetConf, error) {
+
+  // We switch out for the openshift-specific path if we need to.
+  // TODO: This could probably be cleaner and more customizable.
+  use_kubeconfig_path := "/etc/cni/net.d/chainsaw.d/chainsaw.kubeconfig"
+  if _, err := os.Stat(use_kubeconfig_path); errors.Is(err, os.ErrNotExist) {
+    use_kubeconfig_path = "/etc/kubernetes/cni/net.d/chainsaw.d/chainsaw.kubeconfig"
+  }
+
   conf := NetConf{
     SocketEnabled: true,
     SocketPath:    "/var/run/chainsaw-cni/chainsaw.sock",
-    Kubeconfig:    "/etc/cni/net.d/chainsaw.d/chainsaw.kubeconfig",
+    Kubeconfig:    use_kubeconfig_path,
   }
   if err := json.Unmarshal(bytes, &conf); err != nil {
     return nil, fmt.Errorf("failed to load netconf: %s", err)

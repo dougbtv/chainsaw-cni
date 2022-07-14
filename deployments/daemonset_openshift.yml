@@ -101,8 +101,8 @@ spec:
           image: docker.io/dougbtv/chainsaw-cni:latest
           command:
             - "cp"
-            - "/usr/src/chainsaw-cni/bin/chainsaw-cni"
-            - "/host/opt/cni/bin/chainsaw-cni"
+            - "/usr/src/chainsaw-cni/bin/chainsaw"
+            - "/host/opt/cni/bin/chainsaw"
           resources:
             requests:
               cpu: "10m"

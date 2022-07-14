@@ -29,6 +29,7 @@ import (
 
 const (
 	chainsawAnnotation = "k8s.v1.cni.cncf.io/chainsaw"
+	currentDeviceToken = "CURRENT_INTERFACE"
 )
 
 func runCommand(command string, argsstring string) (string, error) {
@@ -43,7 +44,7 @@ func runCommand(command string, argsstring string) (string, error) {
 }
 
 // ProcessCommands runs all of the intended commands from the pod annotation
-func ProcessCommands(netnsName string, commands []string, conf *types.NetConf) error {
+func ProcessCommands(netnsName string, commands []string, currentInterface string, conf *types.NetConf) error {
 	netns, err := ns.GetNS(netnsName)
 	if err != nil {
 		return err
@@ -52,6 +53,9 @@ func ProcessCommands(netnsName string, commands []string, conf *types.NetConf) e
 
 	err = netns.Do(func(_ ns.NetNS) error {
 		for _, v := range commands {
+			// We change out the current interface token with the actual current interface.
+			v = strings.Replace(v, currentDeviceToken, currentInterface, -1)
+
 			cmd := "ip"
 			cmdArgs := strings.TrimSpace(v)
 

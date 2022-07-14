@@ -59,7 +59,7 @@ func cmdAdd(args *skel.CmdArgs) error {
 			return err
 		}
 		chainsaw.WriteToSocket(fmt.Sprintf("Detected commands: %v", commands), conf)
-		err = chainsaw.ProcessCommands(args.Netns, commands, conf)
+		err = chainsaw.ProcessCommands(args.Netns, commands, currentInterface, conf)
 		if err != nil {
 			return err
 		}

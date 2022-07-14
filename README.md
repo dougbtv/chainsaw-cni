@@ -161,6 +161,27 @@ default via 10.244.0.1 dev eth0
 192.0.3.0/24 dev net1 scope link 
 ```
 
+## Special tokens
+
+You can use the term `CURRENT_INTERFACE` to just use the current interface without knowing it. For example:
+
+```
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: chainsawtestpod
+  annotations:
+    k8s.v1.cni.cncf.io/networks: test-chainsaw
+    k8s.v1.cni.cncf.io/chainsaw: >
+      ["ip route add 192.0.3.0/24 dev CURRENT_INTERFACE", "ip route"]
+spec:
+  containers:
+  - name: chainsawtestpod
+    command: ["/bin/ash", "-c", "trap : TERM INT; sleep infinity & wait"]
+    image: alpine
+```
+
 ## Disclaimers
 
 This might start out with some considerations that you want to take seriously as an administrator. There's a non-zero probability that someone can do something nasty to your network if something was missed (trying to cinch that down, still).
@@ -169,5 +190,4 @@ It's a chainsaw after all, [use it carefully](http://www.gameoflogging.com/).
 
 ## TODO
 
-* Add special keywords to use variables from CNI, e.g. `CURRENT_INTERFACE` to do `dev net1` etc etc.
 * Filter expressions: Limit to just a subset of `ip` commands.
